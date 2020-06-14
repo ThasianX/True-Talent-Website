@@ -271,6 +271,11 @@
     // Set the source on the iframe to match the video ID
     $("#youtube").attr('src', src);
 
+    var headerElements = document.getElementsByClassName('header');
+    for (var i = 0; i < headerElements.length; i ++) { 
+        headerElements[i].style.display='none'; 
+    }
+
     // Add class to the body to visually reveal the modal
     $("body").addClass("show-video-modal noscroll");
 
@@ -283,6 +288,11 @@
 
     // re-hide the video modal
     $("body").removeClass("show-video-modal noscroll");
+
+    var headerElements = document.getElementsByClassName('header');
+    for (var i = 0; i < headerElements.length; i ++) {
+         headerElements[i].style.display='block';
+    }
 
     // reset the source attribute for the iframe template, kills the video
     $("#youtube").attr('src', '');
