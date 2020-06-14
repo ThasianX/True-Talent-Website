@@ -209,7 +209,7 @@ bootstrap.min.css:5
 
 .baner-content {
 	width: 100%;
-  	padding-top: 35vh;
+  	padding-top: 15vh;
   	text-align: center;
   	background-image: url(../img/homescreen.png);
   	vertical-align: middle;
@@ -245,15 +245,6 @@ bootstrap.min.css:5
 
 .baner-content .text-content .primary-white-button {
 	margin-top: 25px;
-}
-
-
-#about {
-	padding: 150px 0px;
-	background-image: url(../img/about-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 #about .service-item {
